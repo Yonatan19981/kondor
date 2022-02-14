@@ -1,14 +1,16 @@
 <template>
-  <div>
-    <Logo />
-    <LogoText />
+  <div class="container">
+    <div class="logo">
+      <Logo />
+      <LogoText />
+    </div>
     <div v-if="hasAccounts">
       <input type="password" v-model="password" placeholder="Password" />
       <button @click="unlock">unlock</button>
     </div>
-    <router-link to="/newWallet"
-      >import using Secret Recovery Phrase</router-link
-    >
+    <router-link to="/newWallet">
+      <button>import wallet</button>
+    </router-link>
   </div>
 </template>
 
@@ -53,3 +55,18 @@ export default {
   },
 };
 </script>
+<style scoped>
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+</style>

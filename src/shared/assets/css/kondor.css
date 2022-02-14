@@ -7,12 +7,14 @@
 
 body {
   margin: 0px;
+  background: var(--secondary-color);
 }
 
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Urbanist", sans-serif;
+  font-family: sans-serif;
+  font-weight: 100;
   background-color: var(--secondary-color);
   color: var(--primary-color);
   padding: 20px;
@@ -60,18 +62,34 @@ textarea {
   background: none;
   line-height: 1;
   font-size: 13px;
-  font-family: Arial;
+  font-family: monospace;
 }
 
 button {
-  background: var(--kondor-light);
+  border: none;
   padding: 0.8em;
   color: var(--secondary-color);
-  border-radius: 8px;
-  border-width: 0;
-  font-family: "Major Mono Display", monospace;
+  background: var(--kondor-light);
+  font-family: monospace;
   cursor: pointer;
+  margin: .5em 0;
 }
 button:hover {
   opacity: 0.5;
+}
+.nav-button {
+  background: none;
+}
+.nav-button span {
+  color: var(--kondor-light);
+  font-size: 1.2em;
+}
+.disabled {
+  opacity: .4;
+}
+.button-disabled {
+  cursor: not-allowed;
+}
+.coming-soon {
+  opacity: 1 !important;
 }

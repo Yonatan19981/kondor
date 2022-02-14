@@ -59,3 +59,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+div {
+  border: 1px solid white;
+}
+</style>

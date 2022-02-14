@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <span>{{ address }}</span>
+  <div class="container">
+    <div class="address">{{ address }}</div>
     <div>Balance {{ balance }} tKoin</div>
     <input v-model="toAddress" type="text" placeholder="To address" />
     <input v-model="amount" type="text" placeholder="Amount" />
@@ -113,3 +113,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.address {
+  font-size: .6em;
+}
+</style>

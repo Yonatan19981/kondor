@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="back"><span>&#8592;</span></button>
+    <button @click="back" class="nav-button"><span>&#8592;</span></button>
   </div>
 </template>
 
